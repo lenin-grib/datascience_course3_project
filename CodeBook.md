@@ -18,13 +18,23 @@ __activity__: string; one of the following activity names:
 
 ## Measurements Means
 
-All variables are the mean of a selected measurement for each subject and activity pair. All values are numeric. 
+### Naming
 
 The basic naming convention is:
 
 ```Mean{Time|Frequency}{<measurement>}{Mean|StdDev}{XYZ}```
 
 Where {time|Frequency} indicates whether the measurement comes from the time or frequency domain, measurement is one of the original measurement features, {Mean|StdDev} indicates whether the measurement was a mean or standard deviation variable, and {XYZ} is X, Y, or Z, indicating the axis along which the measurement was taken, or nothing, for magnitude measurements.
+
+### Units
+
+All variables are the mean of a selected measurement for each subject and activity pair. All values are numeric and normalised (bounded within [-1,1]).
+
+* Acceleration measurements (variables containing "Acc") were made in g's (9.81 m.s⁻²) 
+* Gyroscope measurements (variables containing "Gyro") were made in radians per second (rad.s⁻¹).
+* Magnitudes of three-dimensional signals (variables containing "Mag") were calculated using the Euclidean norm.
+
+### Variables
 
 Time domain body acceleration mean along X, Y, and Z:
 
