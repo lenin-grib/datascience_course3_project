@@ -91,4 +91,4 @@ dataset_grouped <- group_by(dataset, subject, activity)
 
 ## get mean of the rest of the variables and save result in a file
 dataset_final <- summarize_all(dataset_grouped, mean)
-write.table(dataset_final, "./dataset_final.txt")
+write.table(dataset_final, "./dataset_final.txt", row.name=FALSE)
