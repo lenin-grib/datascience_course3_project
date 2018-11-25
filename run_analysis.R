@@ -83,12 +83,12 @@ dataset <- dataset_ext[, order]
 ## -- STEP 5 -- (From the data set in step 4, creates a second, independent tidy data set with 
 ##the average of each variable for each activity and each subject.)
 
-## indicate that variables will represent Mean values
-names(dataset)[-c(1,2)] <- paste0("Mean", names(dataset)[-c(1,2)])
-
 ## group by subject and then by activity
 dataset_grouped <- group_by(dataset, subject, activity)
 
-## get mean of the rest of the variables and save result in a file
+## get mean of the rest of the variables 
 dataset_final <- summarize_all(dataset_grouped, mean)
+## indicate that variables will represent Mean values
+names(dataset_final)[-c(1,2)] <- paste0("Mean", names(dataset_final)[-c(1,2)])
+## save result in a file
 write.table(dataset_final, "./dataset_final.txt", row.name=FALSE)
