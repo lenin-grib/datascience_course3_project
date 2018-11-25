@@ -22,9 +22,9 @@ All variables are the mean of a selected measurement for each subject and activi
 
 The basic naming convention is:
 
-```Mean{time|Frequency}{<measurement>}{mean|Std}{XYZ}```
+```Mean{Time|Frequency}{<measurement>}{Mean|StdDev}{XYZ}```
 
-Where timeOrFreq is either Time or Frequency, indicating whether the measurement comes from the time or frequency domain, measurement is one of the original measurement features, meanOrStd is either Mean or StdDev, indicating whether the measurement was a mean or standard deviation variable, and XYZ is X, Y, or Z, indicating the axis along which the measurement was taken, or nothing, for magnitude measurements.
+Where {time|Frequency} indicates whether the measurement comes from the time or frequency domain, measurement is one of the original measurement features, {Mean|StdDev} indicates whether the measurement was a mean or standard deviation variable, and {XYZ} is X, Y, or Z, indicating the axis along which the measurement was taken, or nothing, for magnitude measurements.
 
 Time domain body acceleration mean along X, Y, and Z:
 
