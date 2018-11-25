@@ -10,6 +10,6 @@ The script performs following steps:
 1. Appropriately labels the data set with descriptive variable names.
 1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-The data is in "wide" format as described in an article by [Hadley Wickham] (http://vita.had.co.nz/papers/tidy-data.pdf); there is a single row for each subject/activity pair, and a single column for each measurement.
+The data is in "wide" format as described in an article by [Hadley Wickham](http://vita.had.co.nz/papers/tidy-data.pdf); there is a single row for each subject/activity pair, and a single column for each measurement.
 
 The final data set can be found in the dataset_final.txt file, which can be read into R with read.table("dataset_final.txt", header = TRUE). A detailed description of the variables can be found in CodeBook.md. 
