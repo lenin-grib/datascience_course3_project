@@ -2,7 +2,7 @@
 
 This project uses data of the experiment measuring accelerometers data from the Samsung Galaxy S smartphone while subjects are performing different activities. More details about methods and each measurement can be found [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
-The data is then tidied up according to the following format:
+The data is the tidied up according to the following format:
 
 ## Subject and Activity
 
@@ -17,6 +17,8 @@ __activity__: string; one of the following activity names:
 * Laying
 
 ## Measurements Means
+
+Lists average values for selected variables per each subject and activity.
 
 ### Naming
 
