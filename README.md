@@ -10,7 +10,7 @@ The script performs following steps:
 1. Extracts only the measurements on the mean and standard deviation for each measurement.
 1. Uses descriptive activity names to name the activities in the data set
 1. Appropriately labels the data set with descriptive variable names.
-1. From the data set in the previous step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. From the data set in the previous step, creates a final tidy data set with an average of each variable for each activity and each subject (dataset_final.txt).
 
 Required libraries:
 * plyr
