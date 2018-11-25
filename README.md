@@ -15,6 +15,7 @@ For more detailed steps see the comments to the run_analysis.R.
 The data is in "wide" format as described in an article by [Hadley Wickham](http://vita.had.co.nz/papers/tidy-data.pdf); there is a single row for each subject/activity pair, and a single column for each measurement.
 
 The final dataset can be found in the dataset_final.txt file, which can be read into R with 
+
 ```read.table("dataset_final.txt", header = TRUE)```
 
 A detailed description of the variables can be found in CodeBook.md. 
